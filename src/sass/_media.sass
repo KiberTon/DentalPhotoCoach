@@ -1,0 +1,135 @@
+@media screen and ( max-width: 1200px )
+    .promo
+        &_dentalphotocoach
+            font-size: 70px
+        &_description
+            font-size: 30px
+
+@media screen and ( max-width: 991px )
+    .promo
+        &_dentalphotocoach
+            font-size: 50px
+            text-align: center
+        &_description
+            font-size: 30px
+            text-align: center
+
+    .about
+        padding: 580px 0 0 0
+        &_me
+            font-size: 39px
+        &_descr
+            color: #fff
+            font-size: 22px
+            line-height: 25px
+            text-align: center
+
+    .courses
+        padding: 50px 0 50px 0
+        &_subs
+            padding: 0
+            font-size: 15px
+            line-height: 19px
+
+@media screen and ( max-width: 767px )
+    .promo
+        &_dentalphotocoach
+            font-size: 43px
+        &_description
+            font-size: 29px
+    .about
+        &_me
+            font-size: 29px
+        &_descr
+            font-size: 20px
+            margin: 0
+            font-family: sans-serif
+            font-weight: 100
+        &_canvas
+            border-radius: 17px
+
+    .courses
+        h2
+            font-size: 20px
+        &_subs
+            font-size: 12px
+            line-height: 15px
+
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+            width: 50%
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        &_link
+            font-size: 20px
+
+    .hamburger
+        display: block
+        position: absolute
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        right: 10px
+        top: 50%
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+
+@media screen and ( max-width: 575px )
+    nav
+        height: 30px
+    header
+        height: 30px
+    .promo
+        min-height: 400px
+        padding: 262px 0 30px 0
+        &_dentalphotocoach
+            font-size: 30px
+            padding: 0 24px
+            line-height: 35px
+        &_description
+            padding: 0 10px
+            font-size: 17px
+    .about
+        min-height: 400px
+        padding: 253px 0 10px 0
+        &_me
+            font-size: 30px
+            line-height: 30px
+        &_descr
+            font-size: 20px
+            margin: 0
+            font-family: sans-serif
+            font-weight: lighter
+            line-height: 18px
+    .courses
+        padding: 30px 0 30px 0
+        
+
